@@ -25,7 +25,7 @@ git clone https://github.com/nsf/obkey.git
 ln ~/bin/obkey/obkey /usr/games/ -s
 
 # internet
-apt-get install chromium-browser transmission -y
+apt-get install chromium-browser transmission pidgin -y
 
 # desktop
 apt-get install nvidia-settings gtk-recordmydesktop -y
