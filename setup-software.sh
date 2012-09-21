@@ -25,7 +25,7 @@ apt-get install openbox obconf obmenu grun obkey -y
 apt-get install chromium-browser transmission -y
 
 # desktop
-apt-get install nvidia-settings gtk-recordmydesktop -y
+apt-get install nvidia-settings gtk-recordmydesktop qalc -y
 
 # dev
 apt-get install gimp gcolor2 libreoffice kodos meld git mercurial -y
