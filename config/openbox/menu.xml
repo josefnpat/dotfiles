@@ -15,13 +15,6 @@
 		</item>
 		<separator/>
 		<menu id="root-menu-80356" label="ssh">
-			<item label="opl-dev-bookbag.rit.edu">
-				<action name="Execute">
-					<execute>
-						gnome-terminal -e &quot;ssh jnp4518@opl-dev-bookbag.rit.edu&quot;
-					</execute>
-				</action>
-			</item>
 			<item label="home ">
 				<action name="Execute">
 					<execute>
@@ -34,6 +27,11 @@
 					<execute>
 						gnome-terminal -e &quot;ssh outofti5@cupm.net&quot;
 					</execute>
+				</action>
+			</item>
+			<item label="linode">
+				<action name="Execute">
+					<execute>gnome-terminal -e &quot;ssh seppi@50.116.63.25&quot;</execute>
 				</action>
 			</item>
 		</menu>
