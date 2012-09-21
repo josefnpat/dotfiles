@@ -64,13 +64,6 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Volume">
-				<action name="Execute">
-					<execute>
-						gnome-volume-control
-					</execute>
-				</action>
-			</item>
 			<item label="Control Center">
 				<action name="Execute">
 					<execute>gnome-control-center</execute>
