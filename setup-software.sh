@@ -16,7 +16,7 @@ apt-get update -y
 
 # openbox
 # I think obkey got added to the ubuntu 12.04 repos
-apt-get install openbox obconf obmenu grun feh conky -y
+apt-get install openbox obconf obmenu grun feh conky lxappearance -y
 
 # obkey (No idea why this isn't in the repos.)
 # source

@@ -64,6 +64,11 @@
 					<execute>gnome-control-center</execute>
 				</action>
 			</item>
+			<item label="Appearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
 		</menu>
 		<menu id="root-menu-954459" label="OpenBox">
 			<item label="Set Wallpaper">
