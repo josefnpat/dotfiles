@@ -577,6 +577,7 @@
       </mousebind>
     </context>
     <context name="Desktop">
+      <!--
       <mousebind action="Click" button="Up">
         <action name="DesktopPrevious"/>
       </mousebind>
@@ -595,6 +596,7 @@
       <mousebind action="Click" button="C-A-Down">
         <action name="DesktopNext"/>
       </mousebind>
+      -->
       <mousebind action="Press" button="Left">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -617,6 +619,7 @@
         </action>
       </mousebind>
     </context>
+    <!--
     <context name="MoveResize">
       <mousebind action="Click" button="Up">
         <action name="DesktopPrevious"/>
@@ -631,6 +634,7 @@
         <action name="DesktopNext"/>
       </mousebind>
     </context>
+    -->
   </mouse>
   <menu><!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless --><!-- default menu file (or custom one in $HOME/.config/openbox/) --><!-- system menu files on Debian systems --><file>/var/lib/openbox/debian-menu.xml</file><file>debian-menu.xml</file><file>menu.xml</file><hideDelay>200</hideDelay><!-- if a press-release lasts longer than this setting (in milliseconds), the
