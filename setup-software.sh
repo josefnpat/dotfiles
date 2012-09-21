@@ -12,7 +12,7 @@ apt-add-repository ppa:team-xbmc/ppa -y
 apt-get update -y
 
 # cli
-apt-get install irssi qalc git -y
+apt-get install irssi qalc git mocp -y
 
 # openbox
 # I think obkey got added to the ubuntu 12.04 repos
@@ -37,7 +37,7 @@ apt-get install gimp gcolor2 libreoffice kodos meld mercurial -y
 apt-get install love wine gweled -y
 
 # media
-apt-get install vlc mocp rhythmbox audacity xbmc -y
+apt-get install vlc rhythmbox audacity xbmc -y
 
 # don't want this!
 #apt-get remove
