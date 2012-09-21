@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="background_darkness" mtime="1348253357" type="float" value="0.78055965900421143"/>
 	<entry name="use_theme_colors" mtime="1348253160" type="bool" value="false"/>
 	<entry name="scroll_background" mtime="1348253149" type="bool" value="true"/>
 	<entry name="background_type" mtime="1348253149" type="string">
