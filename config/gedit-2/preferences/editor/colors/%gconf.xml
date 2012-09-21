@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="scheme" mtime="1348251399" type="string">
+		<stringvalue>oblivion</stringvalue>
+	</entry>
+</gconf>
