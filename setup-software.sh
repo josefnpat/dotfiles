@@ -13,13 +13,13 @@ apt-get update -y
 
 # openbox
 # I think obkey got added to the ubuntu 12.04 repos
-apt-get install openbox obconf obmenu grun obkey -y
+apt-get install openbox obconf obmenu grun -y
 
 # obkey (No idea why this isn't in the repos.)
 # source
-#cd ~/bin/
-#git clone https://github.com/nsf/obkey.git
-#ln ~/bin/obkey/obkey /usr/games/ -s
+cd ~/bin/
+git clone https://github.com/nsf/obkey.git
+ln ~/bin/obkey/obkey /usr/games/ -s
 
 # internet
 apt-get install chromium-browser transmission -y
