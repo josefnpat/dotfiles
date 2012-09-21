@@ -21,13 +21,16 @@ apt-get install openbox obconf obmenu grun obkey -y
 #git clone https://github.com/nsf/obkey.git
 #ln ~/bin/obkey/obkey /usr/games/ -s
 
-# stuff I like
-apt-get install chromium-browser nvidia-settings gtk-recordmydesktop -y
+# internet
+apt-get install chromium-browser transmission -y
+
+# desktop
+apt-get install nvidia-settings gtk-recordmydesktop -y
 
 # dev
 apt-get install gimp gcolor2 libreoffice kodos meld git mercurial -y
 
-# vidya gamez
+# vidya
 apt-get install love love-unsatble wine gweled -y
 
 # media
