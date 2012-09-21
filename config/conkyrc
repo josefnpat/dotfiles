@@ -37,11 +37,17 @@ ${color DimGray}
 ${font}
 ${font Andale Mono:bold:size=10}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
 ${color DimGray}$sysname $kernel $alignr $machine
-Intel Pentium D $alignr${freq_g cpu0}Ghz
+$alignr${freq_g cpu0}Ghz
 Uptime $alignr${uptime}
 ${font Andale Mono:bold:size=10}${color Tan1}PROCESSORS ${color DarkSlateGray}${hr 2}
 ${color DimGray}CPU1   ${cpu cpu1}% ${cpubar cpu1}
 CPU2   ${cpu cpu2}% ${cpubar cpu2}
+#CPU3   ${cpu cpu3}% ${cpubar cpu3}
+#CPU4   ${cpu cpu4}% ${cpubar cpu4}
+#CPU5   ${cpu cpu5}% ${cpubar cpu5}
+#CPU6   ${cpu cpu6}% ${cpubar cpu6}
+#CPU7   ${cpu cpu7}% ${cpubar cpu7}
+#CPU8   ${cpu cpu8}% ${cpubar cpu8}
 ${font Andale Mono:bold:size=10}${color Tan1}MEMORY ${color DarkSlateGray}${hr 2}
 ${color DimGray}MEM $alignc $mem / $memmax $alignr $memperc%
 $membar
@@ -65,3 +71,8 @@ Down $alignr ${downspeed wlan0} kb/s
 Up $alignr ${upspeed wlan0} kb/s
 Downloaded: $alignr  ${totaldown wlan0}
 Uploaded: $alignr  ${totalup wlan0}
+${color DimGray}IP on eth0 $alignr ${addr eth0}
+Down $alignr ${downspeed eth0} kb/s
+Up $alignr ${upspeed eth0} kb/s
+Downloaded: $alignr  ${totaldown eth0}
+Uploaded: $alignr  ${totalup eth0}
