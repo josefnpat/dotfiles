@@ -31,7 +31,7 @@ apt-get install nvidia-settings gtk-recordmydesktop -y
 apt-get install gimp gcolor2 libreoffice kodos meld git mercurial -y
 
 # vidya
-apt-get install love love-unsatble wine gweled -y
+apt-get install love wine gweled -y
 
 # media
 apt-get install vlc mocp rhythmbox audacity xbmc -y
