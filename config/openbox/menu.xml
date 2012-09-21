@@ -50,19 +50,12 @@
 		</item>
 		<item label="Clear Cache">
 			<action name="Execute">
-				<execute>
-					gksudo ~/clearcache.sh
-				</execute>
-			</action>
-		</item>
-		<item label="Set Wallpaper (Dell)">
-			<action name="Execute">
-				<execute>feh --bg-max ~/Pictures/wallpaper-dell.jpg</execute>
+				<execute>gksudo ~/dotfiles/scripts/clearcache.sh</execute>
 			</action>
 		</item>
 		<item label="Set Wallpaper">
 			<action name="Execute">
-				<execute>feh --bg-max ~/Pictures/wallpaper.jpg</execute>
+				<execute>feh --bg-max ~/Pictures/wallpaper.png</execute>
 			</action>
 		</item>
 		<menu id="root-menu-272353" label="Gnome">
@@ -73,20 +66,6 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Run Panel">
-				<action name="Execute">
-					<execute>
-						gnome-panel
-					</execute>
-				</action>
-			</item>
-			<item label="Kill Panel">
-				<action name="Execute">
-					<execute>
-						killall gnome-panel
-					</execute>
-				</action>
-			</item>
 			<item label="Volume">
 				<action name="Execute">
 					<execute>
@@ -94,20 +73,16 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Appearance">
+			<item label="Control Center">
 				<action name="Execute">
-					<execute>
-						gnome-appearance-properties
-					</execute>
+					<execute>gnome-control-center</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="root-menu-954459" label="OpenBox">
 			<item label="ObKey">
 				<action name="Execute">
-					<execute>
-						/home/seppi/obkey/obkey
-					</execute>
+					<execute>obkey</execute>
 				</action>
 			</item>
 			<item label="ObMenu">
