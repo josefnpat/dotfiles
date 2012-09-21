@@ -31,7 +31,7 @@ apt-get install chromium-browser transmission -y
 apt-get install nvidia-settings gtk-recordmydesktop -y
 
 # dev
-apt-get install gimp gcolor2 libreoffice kodos meld mercurial -y
+apt-get install gimp gcolor2 libreoffice kodos meld mercurial gedit-developer-plugins -y
 
 # vidya
 apt-get install love wine gweled -y
