@@ -51,11 +51,6 @@
 				<execute>gksudo ~/dotfiles/scripts/clearcache.sh</execute>
 			</action>
 		</item>
-		<item label="Set Wallpaper">
-			<action name="Execute">
-				<execute>feh --bg-max ~/Pictures/wallpaper.png</execute>
-			</action>
-		</item>
 		<menu id="root-menu-272353" label="Gnome">
 			<item label="System Monitor">
 				<action name="Execute">
@@ -71,6 +66,11 @@
 			</item>
 		</menu>
 		<menu id="root-menu-954459" label="OpenBox">
+			<item label="Set Wallpaper">
+				<action name="Execute">
+					<execute>feh --bg-max ~/Pictures/wallpaper.png</execute>
+				</action>
+			</item>
 			<item label="ObKey">
 				<action name="Execute">
 					<execute>obkey</execute>

@@ -1,2 +1,3 @@
 gnome-settings-daemon &
 conky &
+feh --bg-max ~/Pictures/wallpaper.png 
