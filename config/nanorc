@@ -250,6 +250,9 @@ include "/usr/share/nano/gentoo.nanorc"
 ## HTML
 include "/usr/share/nano/html.nanorc"
 
+## Lua
+include "~/dotfiles/config/lua.nanorc"
+
 ## PHP
 include "/usr/share/nano/php.nanorc"
 
