@@ -54,7 +54,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 #regardless of color, I want it like this
-PS1='${debian_chroot:+($debian_chroot)}\w › '
+PS1='${debian_chroot:+($debian_chroot)}\w ♠ '
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
