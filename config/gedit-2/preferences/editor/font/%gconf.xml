@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="editor_font" mtime="1348527408" type="string">
+		<stringvalue>Ubuntu Mono 11</stringvalue>
+	</entry>
+	<entry name="use_default_font" mtime="1348527376" type="bool" value="false"/>
+</gconf>

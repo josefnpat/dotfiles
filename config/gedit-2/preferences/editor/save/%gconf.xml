@@ -2,5 +2,5 @@
 <gconf>
 	<entry name="create_backup_copy" mtime="1348520982" type="bool" value="false"/>
 	<entry name="auto_save" mtime="1348520982" type="bool" value="false"/>
-	<entry name="auto_save_interval" mtime="1348520976" type="int" value="0"/>
+	<entry name="auto_save_interval" mtime="1348527372" type="int" value="0"/>
 </gconf>
