@@ -41,8 +41,11 @@ apt-get install nvidia-settings gtk-recordmydesktop -y
 # dev
 apt-get install gimp gcolor2 agave libreoffice kodos meld mercurial gedit-developer-plugins php5-cli -y
 
+# dev-love
+apt-get install love lua5.1
+
 # vidya
-apt-get install love wine gweled -y
+apt-get install wine gweled -y
 
 # media
 apt-get install vlc rhythmbox audacity xbmc -y
