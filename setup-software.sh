@@ -6,7 +6,7 @@ cd ~
 mkdir ~/bin -p
 
 # cli-funtime
-apt-get install irssi qalc git moc -y
+apt-get install irssi git qalc moc tmux -y
 
 # ppa's
 apt-add-repository ppa:bartbes/love-stable -y
