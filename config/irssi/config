@@ -14,7 +14,14 @@ servers = (
     chatnet = "QuakeNet";
     port = "6667";
   },
-  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
+  {
+    address = "irc.oftc.net";
+    chatnet = "OFTC";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  },
   {
     address = "irc.gamesurge.net";
     chatnet = "GameSurge";
@@ -92,9 +99,7 @@ chatnets = {
   Ubuntu = { type = "IRC"; };
 };
 
-channels = (
-  { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; },
-);
+channels = ( { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; } );
 
 aliases = {
   J = "join";
@@ -263,10 +268,6 @@ settings = {
     user_name = "josefnpat";
     nick = "josefnpat";
   };
-  "fe-text" = {
-    actlist_sort = "refnum";
-  };
-  "fe-common/core" = {
-    theme = "sux";
-  };
+  "fe-text" = { actlist_sort = "refnum"; };
+  "fe-common/core" = { theme = "sux"; };
 };
