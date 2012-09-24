@@ -47,6 +47,12 @@ apt-get install love wine gweled -y
 # media
 apt-get install vlc rhythmbox audacity xbmc -y
 
+# script dependencies
+#imgur [ubuntu 12.04]
+apt-get install curl scrot xclip
+#imgur [other]
+#apt-get install grep libnotify
+
 # don't want this!
 #apt-get remove
 

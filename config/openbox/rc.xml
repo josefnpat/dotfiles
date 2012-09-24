@@ -266,7 +266,7 @@
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>gnome-screenshot -w</command>
+        <command>imgur</command>
       </action>
     </keybind>
     <keybind key="A-Tab">
