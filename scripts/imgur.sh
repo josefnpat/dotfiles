@@ -8,9 +8,5 @@ function uploadImage {
 scrot -s "shot.png"
 uploadImage "shot.png" | tr -d '\n' | xclip -selection c
 
-$temp | xclip -o
-
-echo $temp
-
 rm "shot.png"
 notify-send "Done"
