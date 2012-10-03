@@ -50,6 +50,9 @@ apt-get install wine gweled -y
 # media
 apt-get install vlc rhythmbox audacity xbmc -y
 
+# things not included in 12.04
+apt-get install synaptic
+
 # script dependencies
 #imgur [ubuntu 12.04]
 apt-get install curl scrot xclip
