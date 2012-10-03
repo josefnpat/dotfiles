@@ -10,8 +10,8 @@ servers = (
     chatnet = "afternet";
     port = "6667";
     autoconnect = "yes";
-  }
-{ 
+  },
+  { 
     address = "irc.freenode.org";
     chatnet = "freenode";
     port = "6667";
