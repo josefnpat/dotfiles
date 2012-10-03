@@ -11,6 +11,12 @@ servers = (
     port = "6667";
     autoconnect = "yes";
   }
+{ 
+    address = "irc.freenode.org";
+    chatnet = "freenode";
+    port = "6667";
+    autoconnect = "yes";
+  }
 );
 
 chatnets = {
@@ -26,11 +32,18 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
+  freenode = { 
+    type = "IRC";
+    max_kicks = "1";
+    max_msgs = "3";
+    max_whois = "30";
+  };
 };
 
 channels = ( 
   { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; } 
   { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; } 
+  { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; } 
 );
 
 aliases = {
