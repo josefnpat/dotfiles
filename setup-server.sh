@@ -3,6 +3,12 @@
 apt-get install tasksel
 tasksel install lamp-server
 
+# enable mod_rewrite
+a2enmod rewrite
+
+# restart apache
+service apache2 restart
+
 # Install of drush is a little more extensive than
 # apt-get install drush, as it's not always the newest version.
 # Bleeding edge, man! Install Gentoo.
