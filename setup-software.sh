@@ -12,6 +12,7 @@ apt-get install irssi git qalc moc tmux -y
 apt-add-repository ppa:bartbes/love-stable -y
 apt-add-repository ppa:ubuntu-wine/ppa -y
 apt-add-repository ppa:team-xbmc/ppa -y
+apt-add-repository ppa:a-v-shkop/chromium -y # Temporary solution for chromium 22.x
 apt-get update -y
 
 # repos
