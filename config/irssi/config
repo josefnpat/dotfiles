@@ -5,13 +5,13 @@ servers = (
     port = "6667";
     autoconnect = "yes";
   },
-  { 
+  {
     address = "irc.afternet.org";
     chatnet = "afternet";
     port = "6667";
     autoconnect = "yes";
   },
-  { 
+  {
     address = "irc.freenode.org";
     chatnet = "freenode";
     port = "6667";
@@ -26,13 +26,13 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
-  afternet = { 
+  afternet = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
     max_whois = "30";
   };
-  freenode = { 
+  freenode = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -40,10 +40,11 @@ chatnets = {
   };
 };
 
-channels = ( 
-  { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; } 
-  { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; } 
-  { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; } 
+channels = (
+  { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; },
+  { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
+  { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#OpenGameArt"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -216,3 +217,7 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "sux"; };
 };
+ignores = (
+  { mask = "qaispp"; level = "ALL"; },
+  { mask = "qaisjp"; level = "ALL"; }
+);
