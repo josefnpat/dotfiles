@@ -52,7 +52,7 @@ apt-get install wine gweled -y
 apt-get install vlc rhythmbox audacity xbmc -y
 
 # things not included in 12.04
-apt-get install synaptic gdebi gdebi-core
+apt-get install synaptic gdebi gdebi-core tree
 
 # script dependencies
 #imgur [ubuntu 12.04]
