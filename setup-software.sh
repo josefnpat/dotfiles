@@ -21,7 +21,7 @@ apt-get update -y
 # who is using Skype is encouraging the other to use nonfree software. So I
 # won't use it under any circumstances. -RMS
 add-apt-repository \
-  "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+  "deb http://archive.canonical.com/ $(lsb_release -sc) partner" -y
 
 # openbox
 # I think obkey got added to the ubuntu 12.04 repos
@@ -43,7 +43,7 @@ apt-get install nvidia-settings gtk-recordmydesktop -y
 apt-get install gimp gcolor2 agave libreoffice kodos meld mercurial gedit-developer-plugins php5-cli -y
 
 # dev-love
-apt-get install love lua5.1 liblua5.1-socket2
+apt-get install love lua5.1 liblua5.1-socket2 -y
 
 # vidya
 apt-get install wine gweled -y
@@ -52,16 +52,16 @@ apt-get install wine gweled -y
 apt-get install vlc rhythmbox audacity xbmc -y
 
 # things not included in 12.04
-apt-get install synaptic gdebi gdebi-core tree
+apt-get install synaptic gdebi gdebi-core tree -y
 
 # script dependencies
 #imgur [ubuntu 12.04]
-apt-get install curl scrot xclip
+apt-get install curl scrot xclip -y
 #imgur [other]
 #apt-get install grep libnotify
 
 # don't want this!
-#apt-get remove
+apt-get remove update-manager -y
 
 apt-get upgrade -y
 apt-get autoclean -y
