@@ -3,6 +3,8 @@
 apt-get install tasksel
 tasksel install lamp-server
 
+apt-get install phpmyadmin
+
 # enable mod_rewrite
 a2enmod rewrite
 
