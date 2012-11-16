@@ -2,8 +2,6 @@
 
 # init to home folder
 cd ~
-# alternate binaries
-mkdir ~/bin -p
 
 # cli-funtime
 apt-get install irssi git qalc moc tmux -y
@@ -27,11 +25,19 @@ add-apt-repository \
 # I think obkey got added to the ubuntu 12.04 repos
 apt-get install openbox obconf obmenu grun feh conky lxappearance -y
 
+# alternate binaries / sources
+mkdir ~/bin -p
+cd ~/bin/
+
 # obkey (No idea why this isn't in the repos.)
 # source
-cd ~/bin/
 git clone https://github.com/nsf/obkey.git
 ln ~/bin/obkey/obkey /usr/games/ -s
+
+# gist - Not sure if this works.
+# source
+git clone https://github.com/gmarik/gist.sh.git
+ln ~/bin/gist.sh/gist.sh /usr/games/gist -s
 
 # internet
 apt-get install chromium-browser transmission pidgin skype -y
