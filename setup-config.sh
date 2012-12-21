@@ -9,3 +9,4 @@ ln -s ~/dotfiles/config/gedit-2/ ~/.gconf/apps/gedit-2
 ln -s ~/dotfiles/config/gtk-3.0/ ~/.config/gtk-3.0
 ln -s ~/dotfiles/config/irssi/ ~/.irssi
 ln -s ~/dotfiles/config/bashrc ~/.bashrc
+ln -s ~/dotfiles/config/tmux.conf ~/.tmux.conf
