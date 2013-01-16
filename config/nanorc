@@ -256,6 +256,12 @@ include "~/dotfiles/config/lua.nanorc"
 ## PHP
 include "/usr/share/nano/php.nanorc"
 
+## Javascript
+include "~/dotfiles/config/js.nanorc"
+
+## Markdown
+include "~/dotfiles/config/markdown.nanorc"
+
 ## TCL
 include "/usr/share/nano/tcl.nanorc"
 
