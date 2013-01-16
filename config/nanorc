@@ -254,7 +254,7 @@ include "/usr/share/nano/html.nanorc"
 include "~/dotfiles/config/lua.nanorc"
 
 ## PHP
-include "/usr/share/nano/php.nanorc"
+include "~/dotfiles/config/php.nanorc"
 
 ## Javascript
 include "~/dotfiles/config/js.nanorc"
