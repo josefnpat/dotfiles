@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+
+$xml = file_get_contents("https://api.eveonline.com/server/ServerStatus.xml.aspx");
+$status = new SimpleXMLElement($xml);
+
+print_r($status);
+
+$local = time()+5*60*60;
+$eve = strtotime($status->cachedUntil);
+
+echo "\n";
+echo "localhost :".date("Y-m-d H:i:s",$local)."\n";
+echo "eve       :".date("Y-m-d H:i:s",$eve  )."\n";
+echo "cache     :".($eve-$local)."\n";
