@@ -42,6 +42,7 @@ chatnets = {
 
 channels = (
   { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; },
+  { name = "#love-blogs"; chatnet = "OFTC"; autojoin = "Yes"; },
 #  { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
   { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; },
 #  { name = "#OpenGameArt"; chatnet = "freenode"; autojoin = "Yes"; },
