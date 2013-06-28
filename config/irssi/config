@@ -9,7 +9,7 @@ servers = (
     address = "irc.afternet.org";
     chatnet = "afternet";
     port = "6667";
-#    autoconnect = "yes";
+    autoconnect = "yes";
   },
   {
     address = "irc.freenode.org";
@@ -43,7 +43,8 @@ chatnets = {
 channels = (
   { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; },
   { name = "#love-blogs"; chatnet = "OFTC"; autojoin = "Yes"; },
-#  { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
+  { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
+  { name = "#SeasonalJamWeek"; chatnet = "afternet"; autojoin = "Yes"; },
   { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#starfire"; chatnet = "freenode"; autojoin = "Yes"; },
 #  { name = "#OpenGameArt"; chatnet = "freenode"; autojoin = "Yes"; },
