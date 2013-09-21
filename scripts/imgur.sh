@@ -8,7 +8,7 @@
 # 3) If you put in a number, you will get a GIF image. If you canceled, you will get a PNG
 
 # DEPS
-# sudo pacman -S zenity curl imagemagick notify-send xclip
+# sudo pacman -S zenity curl imagemagick notify-send xclip ffmpeg
 # AUR https://aur.archlinux.org/packages.php?ID=32158 for xrectsel
 
 TIME=`zenity --title "imgurgif" --entry --text="How many seconds?" --entry-text=1`
@@ -36,16 +36,11 @@ let FRAMES=$TIME*$FPS+1
 echo "Fecording: ${TIME}s @ $FPS/s"
 echo "Frame Count: ${FRAMES}"
 
-SEL=`xrectsel "%wx%h+%x+%y"`
+SEL=`xrectsel "-s %wx%h -i :0.0+%x,%y"`
 
 mkdir -p $TMP
 
-for ((i=1;i<=$FRAMES;i++))
-do
-  import -window root -crop $SEL +repage -quality 100 ${TMP}${i}.png
-  echo "Recording frame $i"
-  sleep $DELAY # Needs GNU sleep 2.0a+
-done
+ffmpeg -r $FPS -t $TIME -f x11grab $SEL ${TMP}%09d.png
 
 if $USEPNG
 then
