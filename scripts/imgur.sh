@@ -8,7 +8,7 @@
 # 3) If you put in a number, you will get a GIF image. If you canceled, you will get a PNG
 
 # DEPS
-# sudo pacman -S zenity curl import imagemagick notify-send xclip
+# sudo pacman -S zenity curl imagemagick notify-send xclip
 # AUR https://aur.archlinux.org/packages.php?ID=32158 for xrectsel
 
 TIME=`zenity --title "imgurgif" --entry --text="How many seconds?" --entry-text=1`
@@ -53,14 +53,14 @@ then
   notify-send "Uploading PNG [ "`du -h ${TMP}1.png | awk '{print $1}'`" ]"
   uploadImage ${TMP}1.png
   echo $LINK | tr -d '\n' | xclip -selection c
-  notify-send "Uploaded PNG"
+  notify-send "Uploaded PNG - $LINK"
 else
   notify-send "Rendering GIF"
   convert -delay $GIFDELAY -loop 0 $(ls ${TMP}*.png | sort -V) ${TMP}imgmagik.gif
   notify-send "Uploading GIF [ "`du -h ${TMP}imgmagik.gif | awk '{print $1}'`" ]"
   uploadImage ${TMP}imgmagik.gif
   echo $LINK | tr -d '\n' | xclip -selection c
-  notify-send "Uploaded GIF"
+  notify-send "Uploaded GIF - $LINK"
 fi
 
 echo $LINK
