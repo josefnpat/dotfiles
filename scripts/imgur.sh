@@ -12,8 +12,8 @@
 # AUR https://aur.archlinux.org/packages.php?ID=32158 for xrectsel
 
 TIME=`zenity --title "imgurgif" --entry --text="How many seconds?" --entry-text=1`
-
-FPS=24
+FPS=12
+let MAXSIZE=2*1024*1024
 let DELAY=1/$FPS
 let GIFDELAY=$DELAY*100
 TMP="/tmp/imgur/"
@@ -51,7 +51,8 @@ then
   notify-send "Uploaded PNG - $LINK"
 else
   notify-send "Rendering GIF"
-  convert -delay $GIFDELAY -loop 0 $(ls ${TMP}*.png | sort -V) ${TMP}imgmagik.gif
+  convert -layers OptimizeTransparency -delay $GIFDELAY \
+    -loop 0 $(ls ${TMP}*.png | sort -V) ${TMP}imgmagik.gif
   notify-send "Uploading GIF [ "`du -h ${TMP}imgmagik.gif | awk '{print $1}'`" ]"
   uploadImage ${TMP}imgmagik.gif
   echo $LINK | tr -d '\n' | xclip -selection c
