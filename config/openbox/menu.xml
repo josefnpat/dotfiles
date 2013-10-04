@@ -18,7 +18,7 @@
 			<item label="home ">
 				<action name="Execute">
 					<execute>
-						gnome-terminal -e &quot;ssh seppi@72.230.134.225&quot;
+						gnome-terminal -e &quot;ssh seppi@74.67.174.223&quot;
 					</execute>
 				</action>
 			</item>
