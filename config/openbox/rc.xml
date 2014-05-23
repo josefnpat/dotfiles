@@ -296,6 +296,9 @@
         <command>nautilus --no-desktop</command>
       </action>
     </keybind>
+    <keybind key="F11">
+      <action name="ToggleFullscreen"/>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
