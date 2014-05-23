@@ -16,6 +16,12 @@ servers = (
     chatnet = "freenode";
     port = "6667";
     autoconnect = "yes";
+  },
+  {
+    address = "ircd.ovh.uu3.net";
+    chatnet = "uu3";
+    port = "6667";
+    autoconnect = "yes";
   }
 );
 
@@ -44,10 +50,11 @@ channels = (
   { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; },
   { name = "#love-blogs"; chatnet = "OFTC"; autojoin = "Yes"; },
   { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
-  { name = "#SeasonalJamWeek"; chatnet = "afternet"; autojoin = "Yes"; },
   { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#starfire"; chatnet = "freenode"; autojoin = "Yes"; },
-#  { name = "#OpenGameArt"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#reddit-gamedev"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#games"; chatnet = "uu3"; autojoin = "Yes"; },
+  #{ name = "#starfire"; chatnet = "freenode"; autojoin = "Yes"; },
+  #{ name = "#OpenGameArt"; chatnet = "freenode"; autojoin = "Yes"; },
 );
 
 aliases = {
@@ -221,5 +228,6 @@ settings = {
   "fe-common/core" = { theme = "sux"; };
 };
 ignores = (
-  { mask = "qaisjp"; level = "ALL"; }
+  { mask = "beviletty"; level = "ALL"; },
+  { mask = "evilbetty"; level = "ALL"; }
 );

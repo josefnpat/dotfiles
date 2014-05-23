@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # USAGE:
 # 1) Hook this script up to your favorite shortcut key, and when the dialog comes up, either;
@@ -8,8 +8,14 @@
 # 3) If you put in a number, you will get a GIF image. If you canceled, you will get a PNG
 
 # DEPS
+
+# Arch
 # sudo pacman -S zenity curl imagemagick notify-send xclip ffmpeg
 # AUR https://aur.archlinux.org/packages.php?ID=32158 for xrectsel
+
+# Debian
+# sudo apt-get install zenity curl imagemagick notify-send xclip ffmpeg
+# make install https://github.com/lolilolicon/FFcast2
 
 TIME=`zenity --title "imgurgif" --entry --text="How many seconds?" --entry-text=1`
 FPS=12
