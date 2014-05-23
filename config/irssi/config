@@ -52,7 +52,9 @@ channels = (
   { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
   { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#reddit-gamedev"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#games"; chatnet = "uu3"; autojoin = "Yes"; },
+  #{ name = "#games"; chatnet = "uu3"; autojoin = "Yes"; },
+  #{ name = "#rbd"; chatnet = "freenode"; autojoin = "Yes"; },
+  #{ name = "#vapor-dev"; chatnet = "OFTC"; autojoin = "Yes"; },
   #{ name = "#starfire"; chatnet = "freenode"; autojoin = "Yes"; },
   #{ name = "#OpenGameArt"; chatnet = "freenode"; autojoin = "Yes"; },
 );
@@ -228,6 +230,10 @@ settings = {
   "fe-common/core" = { theme = "sux"; };
 };
 ignores = (
+<<<<<<< Updated upstream
   { mask = "beviletty"; level = "ALL"; },
   { mask = "evilbetty"; level = "ALL"; }
+=======
+  { mask = "NikolaEdisson"; level = "ALL"; }
+>>>>>>> Stashed changes
 );

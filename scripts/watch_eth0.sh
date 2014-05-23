@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo iftop -i eth0 -B 
+sudo iftop -i enp8s0 -B 

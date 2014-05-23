@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
@@ -116,7 +117,7 @@
       <name>Gamma</name>
       <name>Delta</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -147,7 +148,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>BottomLeft</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -180,12 +181,6 @@
     <keybind key="A-Down">
       <action name="Execute">
         <command>pactl set-sink-volume 0 -- -10%</command>
-      </action>
-    </keybind>
-
-    <keybind key="C-Print">
-      <action name="Execute">
-        <command>imgur</command>
       </action>
     </keybind>
     <keybind key="C-A-Right">
@@ -261,12 +256,17 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>gnome-screenshot</command>
+        <command>scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>imgur</command>
+        <command>sh ~/scripts/imgur.sh</command>
+      </action>
+    </keybind>
+    <keybind key="A-O">
+      <action name="Execute">
+        <command>mplayer ~/.config/openbox/Yello_Oh_Yeah.ogg</command>
       </action>
     </keybind>
     <keybind key="A-Tab">
@@ -283,12 +283,12 @@
     </keybind>
     <keybind key="A-F2">
       <action name="Execute">
-        <command>grun</command>
+        <command>gmrun</command>
       </action>
     </keybind>
     <keybind key="A-grave">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>lxterminal</command>
       </action>
     </keybind>
     <keybind key="A-Home">

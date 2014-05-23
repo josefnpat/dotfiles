@@ -1,3 +1,9 @@
+DISPLAY=:0.1 openbox &
+DISPLAY=:0.2 openbox &
+DISPLAY=:0.3 openbox &
 gnome-settings-daemon &
 conky &
-feh --bg-max ~/Pictures/wallpaper.png 
+DISPLAU=:0.0 feh --bg-max ~/Pictures/wallpaper.png
+DISPLAY=:0.1 feh --bg-max ~/Pictures/wallpaper.png
+DISPLAY=:0.2 feh --bg-max ~/Pictures/wallpaper.png
+#xfce4-panel &
