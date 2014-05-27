@@ -4,3 +4,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 syntax on
+"set spell spelllang=en_us
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
+set list
