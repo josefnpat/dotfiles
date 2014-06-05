@@ -117,7 +117,7 @@
       <name>Gamma</name>
       <name>Delta</name>
     </names>
-    <popupTime>500</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -148,7 +148,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>BottomLeft</position>
+    <position>TopLeft</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -181,6 +181,11 @@
     <keybind key="A-Down">
       <action name="Execute">
         <command>pactl set-sink-volume 0 -- -10%</command>
+      </action>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>imgur</command>
       </action>
     </keybind>
     <keybind key="C-A-Right">
