@@ -1,0 +1,7 @@
+[user]
+	email = seppi@josefnpat.com
+	name = josefnpat
+[alias]
+  fuck = rebase --ignore-date
+[core]
+  editor = vim
