@@ -16,7 +16,7 @@ function recursive_find_functions( input_table, table_stack, functions )
   return functions
 end
 
-fs = recursive_find_functions(love.graphics,{"love.graphics"})
+fs = recursive_find_functions(love,{"love"})
 
 for _,v in pairs(fs) do
   print(v)
