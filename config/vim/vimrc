@@ -14,3 +14,10 @@ colorscheme koehler
 set foldmethod=indent
 set nofoldenable
 set autoindent
+
+function SetLovePrefs()
+  setlocal dictionary-=~/.vim/love-dictionary/love.dict dictionary+=~/.vim/love-dictionary/love.dict
+  setlocal iskeyword+=.
+endfunction
+
+autocmd FileType lua call SetLovePrefs()
