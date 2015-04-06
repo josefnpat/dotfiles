@@ -10,3 +10,7 @@ set list
 au BufReadCmd *.love call zip#Browse(expand("<amatch>"))
 set colorcolumn=81
 colorscheme koehler
+
+set foldmethod=indent
+set nofoldenable
+set autoindent
