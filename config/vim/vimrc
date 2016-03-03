@@ -9,15 +9,19 @@ set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
 set list
 au BufReadCmd *.love call zip#Browse(expand("<amatch>"))
 set colorcolumn=81
-colorscheme koehler
 
 set foldmethod=indent
 set nofoldenable
 set autoindent
 
-function SetLovePrefs()
-  setlocal dictionary-=~/.vim/love-dictionary/love.dict dictionary+=~/.vim/love-dictionary/love.dict
-  setlocal iskeyword+=.
-endfunction
+"colorscheme koehler
+colorscheme elflord
 
-autocmd FileType lua call SetLovePrefs()
+func! Unjames()
+  exe "normal mz"
+  set tabstop=4
+  %retab!
+  set tabstop=2
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
