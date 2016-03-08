@@ -32,6 +32,7 @@ if has('python')
 python << EOF
 
 webbrowser_enabled = False
+urltoregisters_enabled = False
 
 def codepadLang(vimLang):
   filetypeMap = {
@@ -94,8 +95,9 @@ def codepadRun():
 
 def cleanup(url):
   import vim
-  vim.command("call setreg('+', '%s')" % url)
-  vim.command("call setreg('*', '%s')" % url)
+  if urltoregisters_enabled:
+    vim.command("call setreg('+', '%s')" % url)
+    vim.command("call setreg('*', '%s')" % url)
   print url
   if webbrowser_enabled:
     import webbrowser
