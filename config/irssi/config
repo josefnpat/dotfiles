@@ -16,11 +16,17 @@ servers = (
     chatnet = "freenode";
     port = "6667";
     autoconnect = "yes";
+  },
+  {
+    address = "borg.uu3.net";
+    chatnet = "uu3";
+    port = "6667";
+    autoconnect = "yes";
   }
 );
 
 chatnets = {
-  OFTC = { 
+  OFTC = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -38,14 +44,31 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
+  uu3 = {
+    type = "IRC";
+    max_kicks = "1";
+    max_msgs = "3";
+    max_whois = "30";
+  };
 };
 
 channels = (
   { name = "#love"; chatnet = "OFTC"; autojoin = "Yes"; },
   { name = "#love-blogs"; chatnet = "OFTC"; autojoin = "Yes"; },
+  { name = "#rodeo"; chatnet = "OFTC"; autojoin = "Yes"; },
+
   { name = "#ludumdare"; chatnet = "afternet"; autojoin = "Yes"; },
-  { name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#reddit-gamedev"; chatnet = "freenode"; autojoin = "Yes"; },
+
+  { name = "#moonscript"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#pico8"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#gamingonlinux"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#lua"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#chipsters"; chatnet = "freenode"; autojoin = "Yes"; },
+
+  { name = "#games"; chatnet = "uu3"; autojoin = "yes"; },
+
+  #{ name = "#asswb"; chatnet = "freenode"; autojoin = "Yes"; },
+  #{ name = "#reddit-gamedev"; chatnet = "freenode"; autojoin = "Yes"; },
   #{ name = "#rbd"; chatnet = "freenode"; autojoin = "Yes"; },
   #{ name = "#vapor-dev"; chatnet = "OFTC"; autojoin = "Yes"; },
   #{ name = "#starfire"; chatnet = "freenode"; autojoin = "Yes"; },
