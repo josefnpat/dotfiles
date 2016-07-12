@@ -8,3 +8,5 @@ syntax on
 set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
 set list
 au BufReadCmd *.love call zip#Browse(expand("<amatch>"))
+
+colorscheme elflord

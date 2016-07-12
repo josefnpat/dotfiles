@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/seppi/projects/finalspace/client/api'
+let g:netrw_dirhist_2='/home/seppi/repos/slg09x/.git'
+let g:netrw_dirhist_3='/home/seppi/repos/gmt/src/phpgraphlib'
+let g:netrw_dirhist_4='/var/www/public/offboard/theme/yotsuba'
+let g:netrw_dirhist_5='/home/seppi/repos/xapalus-deluxe/src'
+let g:netrw_dirhist_6='/home/seppi/repos/xapalus-deluxe/src/assets'
+let g:netrw_dirhist_7='/home/seppi/repos/Fuck/examples'
